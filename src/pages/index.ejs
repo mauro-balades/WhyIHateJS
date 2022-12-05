@@ -12,6 +12,25 @@
     <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/fonts/source-sans-pro-v14-latin-600.woff2">
 </head>
 <body>
-    hey
+    <header>
+        <h1>Reasons why I hate js</h1>
+        <a href="#content" class="scroll-down">
+            <svg fill="none" style="width: 100%; height: 100%;" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </a>
+    </header>
+    <section id="content">
+        <h1>Here are <%= collections.length %> irregularities we found from JavaScript</h1>
+        <h5>(Thank god TypeScript was created 😌)</h5>
+        <div class="collections">
+            <% for (var i =1; i <=collections.length;  i++ ) { %>
+                <% var collection = collections[i] %>
+
+                <div class="collection">
+                    <%= collection.title %>
+                    <%= collection.description %>
+                </div>
+            <% } %>
+        </div>
+    </section>
 </body>
 </html>

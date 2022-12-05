@@ -1,4 +1,10 @@
 
+import fs from "fs";
+import extract from "extract-md-data";
+
 export default () => {
-    return []
+
+    // TODO: extract md
+
+    return mdFiles
 }
