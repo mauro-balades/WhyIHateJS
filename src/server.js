@@ -10,6 +10,8 @@ export default (collections) => {
 
     app.use(express.json());
     app.use(express.urlencoded({ extended: true }));
+    app.use(express.static(__dirname + "/public")); // This line helps us server static files in the public folder. Here we'll write our CSS and browser javascript code
+
 
     app.get('/', (req, res) => {
         res.render("index.ejs", {})
