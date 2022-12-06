@@ -22,13 +22,12 @@
         <h1>Here are <%= collections.length %> irregularities we found from JavaScript</h1>
         <h5>(Thank god TypeScript was created 😌)</h5>
         <div class="collections">
-            <% for (var i =1; i <=collections.length;  i++ ) { %>
+            <% for (var i =0; i < collections.length;  i++ ) { %>
                 <% var collection = collections[i] %>
 
-                <div class="collection">
+                <a href="<%= collection.id %>" class="collection">
                     <%= collection.title %>
-                    <%= collection.description %>
-                </div>
+                </a>
             <% } %>
         </div>
     </section>

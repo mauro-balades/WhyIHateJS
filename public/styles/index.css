@@ -69,3 +69,11 @@ header .scroll-down {
 
     padding: 0 15rem;
 }
+
+#content .collections .collection {
+    color: #000;
+    font-size: 30px;
+
+    font-weight: 600;
+    text-decoration: none;
+}
