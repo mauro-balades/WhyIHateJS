@@ -1,0 +1,4 @@
+{
+    "watch": ["plublic/", "src/"],
+    "ext": "js, css, json, md"
+}

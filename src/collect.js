@@ -19,7 +19,7 @@ export default () => {
         mdFiles.push({
             title: md.fm.title,
             content: parse(md.content),
-            id: md.fm.title.replace(/[^a-zA-Z ]/g, "-")
+            id: md.fm.title.replace(/[\W]/gi, "-")
         })
     }
 

@@ -26,11 +26,48 @@ header {
     justify-content: center;
 
     position: relative;
+    border-bottom: 1px solid rgb(55 65 81);
+}
+
+header.mid {
+    height: 50vh;
+    justify-content: flex-start;
+
+    padding-left: 5rem;
+}
+
+header .my-hate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
 }
 
 header h1 {
     font-size: 5rem;
     font-weight: 600;
+}
+
+header.mid h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+header.mid div > p {
+    text-transform: capitalize;
+    margin-top: 5px;
+    margin-left: 15px;
+
+    opacity: .5;
 }
 
 header .scroll-down {
@@ -48,21 +85,25 @@ header .scroll-down {
     cursor: pointer;
 }
 
+header.mid .scroll-down {
+    display: none;
+}
+
 /* CONTENT */
 
-#content > h1:first-child {
+#content:not(.is-collection) > h1:first-child {
     margin: 5rem auto 0;
     text-align: center;
 }
 
-#content > h5 {
+#content:not(.is-collection) > h5 {
     margin: 1rem auto 5rem auto;
     text-align: center;
 
     font-weight: 500;
 }
 
-#content .collections {
+#content:not(.is-collection) .collections {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
@@ -70,10 +111,38 @@ header .scroll-down {
     padding: 0 15rem;
 }
 
-#content .collections .collection {
+#content:not(.is-collection) .collections .collection {
     color: #000;
     font-size: 30px;
 
     font-weight: 600;
     text-decoration: none;
+
+    text-align: center;
 }
+
+#content.is-collection {
+    padding: 10rem 20rem;
+}
+
+/* footer */
+
+footer {
+    background: rgb(229 231 235);
+    border-top: 1px solid rgb(55 65 81);
+
+    margin-top: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+}
+
+footer a {
+    margin: 0 10px;
+    color: #000;
+    text-decoration: underline;
+}
+

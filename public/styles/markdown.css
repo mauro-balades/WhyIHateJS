@@ -1,0 +1,88 @@
+.markdown pre,
+.markdown code {
+    font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+.markdown pre {
+    padding: 0.5rem;
+    line-height: 1.25;
+    overflow-x: scroll;
+}
+
+.markdown a,
+.markdown a:visited {
+    color: rgb(37 99 235);
+}
+
+.markdown a:hover,
+.markdown a:focus,
+.markdown a:active {
+    color: rgb(29 78 216);
+}
+
+.markdown p {
+    font-size: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4 {
+    margin: 1.414rem 0 0.5rem;
+    font-weight: inherit;
+    line-height: 1.42;
+
+    font-weight: 600;
+}
+
+.markdown h1 {
+    margin-top: 0;
+    font-size: 3.998rem;
+}
+
+.markdown h2 {
+    font-size: 2.827rem;
+}
+
+.markdown h3 {
+    font-size: 1.999rem;
+}
+
+.markdown h4 {
+    font-size: 1.414rem;
+}
+
+.markdown h5 {
+    font-size: 1.121rem;
+}
+
+.markdown h6 {
+    font-size: 0.88rem;
+}
+
+.markdown small {
+    font-size: 0.707em;
+}
+
+.markdown img,
+.markdown canvas,
+.markdown iframe,
+.markdown video,
+.markdown svg,
+.markdown select,
+.markdown textarea {
+    max-width: 100%;
+}
+
+.markdown pre {
+    background-color: rgb(209 213 219);
+    border-radius: 5px;
+
+    overflow: auto;
+}
+
+.markdown blockquote {
+    border-left: 3px solid #01ff70;
+    padding-left: 1rem;
+}
