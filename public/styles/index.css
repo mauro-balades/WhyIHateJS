@@ -13,6 +13,7 @@ html {
 
 body {
     background: #fff;
+    overflow-x: hidden;
 }
 
 header {
@@ -55,6 +56,12 @@ header .my-hate {
 header h1 {
     font-size: 5rem;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 992px) {
+    header h1  {
+        padding: 0 5%;
+    }
 }
 
 header.mid h1 {
@@ -110,6 +117,13 @@ header.mid .scroll-down {
     padding: 0 15rem;
 }
 
+@media only screen and (max-width: 992px) {
+    #content:not(.is-collection) .collections {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+}
+
 #content:not(.is-collection) .collections .collection {
     color: #000;
     font-size: 30px;
@@ -124,6 +138,12 @@ header.mid .scroll-down {
 
 #content.is-collection {
     padding: 10rem 20rem;
+}
+
+@media only screen and (max-width: 992px) {
+    #content.is-collection {
+        padding: 0 1rem;
+    }
 }
 
 /* footer */
