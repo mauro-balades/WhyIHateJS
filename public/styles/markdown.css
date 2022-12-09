@@ -80,17 +80,35 @@
     border-radius: 5px;
 
     overflow: auto;
+    font-weight: 600;
     margin-bottom: 1rem !important;
 }
 
 .markdown p code {
     background-color: #f5f2f0;
-    border-radius: 1px;
+    border-radius: 2px;
 
     padding: 5px;
 }
 
+.markdown h1 code,
+.markdown h2 code,
+.markdown h3 code,
+.markdown h4 code,
+.markdown h5 code {
+    background-color: #f5f2f0;
+    border-radius: 4px;
+
+    padding: 2px;
+}
+
+.markdown ul,
+.markdown ol {
+    margin-left: 25px;
+
+}
+
 .markdown blockquote {
-    border-left: 3px solid #01ff70;
+    border-left: 3px solid #e7e6e5;
     padding-left: 1rem;
 }

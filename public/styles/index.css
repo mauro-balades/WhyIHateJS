@@ -96,7 +96,7 @@ header.mid .scroll-down {
 }
 
 #content:not(.is-collection) > h5 {
-    margin: 1rem auto 5rem auto;
+    margin: 1rem auto 0 auto;
     text-align: center;
 
     font-weight: 500;
@@ -118,6 +118,8 @@ header.mid .scroll-down {
     text-decoration: none;
 
     text-align: center;
+    margin-top: 5rem;
+
 }
 
 #content.is-collection {
