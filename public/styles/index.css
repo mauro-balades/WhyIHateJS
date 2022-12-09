@@ -63,7 +63,6 @@ header.mid h1 {
 }
 
 header.mid div > p {
-    text-transform: capitalize;
     margin-top: 5px;
     margin-left: 15px;
 

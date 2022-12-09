@@ -21,7 +21,7 @@
 }
 
 .markdown p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 1.3rem;
 }
 
@@ -76,10 +76,18 @@
 }
 
 .markdown pre {
-    background-color: rgb(209 213 219);
+    background-color: #f5f2f0;
     border-radius: 5px;
 
     overflow: auto;
+    margin-bottom: 1rem !important;
+}
+
+.markdown p code {
+    background-color: #f5f2f0;
+    border-radius: 1px;
+
+    padding: 5px;
 }
 
 .markdown blockquote {
